@@ -43,7 +43,9 @@
         "heroku-redis"
     ],
     "buildpacks": [
-        "heroku/php"
+        {
+            "url": "heroku/php"
+        }
     ],
     "environments": {
         "staging": {
