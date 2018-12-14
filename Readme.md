@@ -24,4 +24,13 @@ Just click this button to set up your first app!
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/oof-bar/craft-heroku)
 
+This script does a few things:
+
+1. Creates a new “app” in your Heroku account;
+2. Provisions [addons](https://devcenter.heroku.com/categories/add-ons) (Redis and Postgres);
+3. Helps set up required [Config Vars](https://devcenter.heroku.com/articles/config-vars);
+4. Performs an initial build, including the installation of Composer dependencies;
+5. Configures Dyno formation (with two `web` processes and one `worker`);
+6. Redirects you to the Craft 3 installation screen.
+
 :deciduous_tree:
