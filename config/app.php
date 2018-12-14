@@ -48,12 +48,6 @@ return [
                 'targets' => [
                     [
                         'class' => codemix\streamlog\Target::class,
-                        'url' => 'php://stdout',
-                        'levels' => ['info','trace'],
-                        'logVars' => []
-                    ],
-                    [
-                        'class' => codemix\streamlog\Target::class,
                         'url' => 'php://stderr',
                         'levels' => ['error', 'warning'],
                         'logVars' => []
