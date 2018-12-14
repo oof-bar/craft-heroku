@@ -33,4 +33,6 @@ This script does a few things:
 5. Configures Dyno formation (with two `web` processes and one `worker`);
 6. Redirects you to the Craft 3 installation screen.
 
+> You might encounter some visual issues with the installation process—this is because the `cpresources` that this process moves into the public web root happens on a Dyno-by-Dyno basis, and the initial request for the installation page is not apt to have been hit on both servers—but susequent requests for those assets could still be served by another dyno. Refresh the page a few times, and both dynos will begin to warm their `cpresources`.
+
 :deciduous_tree:
