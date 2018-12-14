@@ -43,6 +43,22 @@ return [
             'cache' => [
                 'class' => yii\redis\Cache::class,
                 'defaultDuration' => 86400
+            ],
+            'log' => [
+                'targets' => [
+                    [
+                        'class' => codemix\streamlog\Target::class,
+                        'url' => 'php://stdout',
+                        'levels' => ['info','trace'],
+                        'logVars' => []
+                    ],
+                    [
+                        'class' => codemix\streamlog\Target::class,
+                        'url' => 'php://stderr',
+                        'levels' => ['error', 'warning'],
+                        'logVars' => []
+                    ]
+                ]
             ]
         ]
     ]
