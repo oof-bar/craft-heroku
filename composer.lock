@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3972f0f0157ad99cb910880a4792c387",
+    "content-hash": "fbbaae3c1bffb809f70f72c7531ca0bb",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -65,6 +65,45 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16T21:13:23+00:00"
+        },
+        {
+            "name": "codemix/yii2-streamlog",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codemix/yii2-streamlog.git",
+                "reference": "46717733b46a91dd323888349b323fb0bd989e2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codemix/yii2-streamlog/zipball/46717733b46a91dd323888349b323fb0bd989e2e",
+                "reference": "46717733b46a91dd323888349b323fb0bd989e2e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "codemix\\streamlog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Härtl",
+                    "email": "haertl.mike@gmail.com"
+                }
+            ],
+            "description": "A Yii 2 log target for streams in URL format",
+            "keywords": [
+                "log",
+                "stdout",
+                "stream",
+                "yii2"
+            ],
+            "time": "2017-02-16T14:50:01+00:00"
         },
         {
             "name": "composer/ca-bundle",
