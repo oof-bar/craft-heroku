@@ -1,0 +1,16 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+/config/license.key
+
+/node_modules
+/.vscode
+
+# Runtime
+/storage
+/web/uploads
+
+# Build Artifacts
+/web/assets/css
+/web/assets/js
