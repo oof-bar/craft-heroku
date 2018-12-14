@@ -42,5 +42,7 @@ return [
     'staging' => [],
 
     // Production environment settings
-    'production' => [],
+    'production' => [
+        'devMode' => true
+    ],
 ];
