@@ -2,7 +2,7 @@
 
 Craft 3 is a PHP application based on Yii2, and is installed via Composer.
 
-This means that it’s well-suited for deployment to cloud-based platforms like Heroku. In this case, we’e put together a barebones starter-kit for running a Craft application on Heroku.
+This means that it’s well-suited for deployment to cloud-based platforms like Heroku. In this case, we’ve put together a barebones starter-kit for running a Craft application on Heroku.
 
 There are a couple of limitations, here, that are important to note if it’s your first time using Heroku:
 
