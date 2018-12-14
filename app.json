@@ -36,7 +36,7 @@
         },
         "worker": {
             "quantity": 1,
-            "size": "hobby"
+            "size": "standard-1x"
         }
     },
     "addons": [
