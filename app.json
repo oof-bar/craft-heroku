@@ -9,9 +9,7 @@
     "website": "https://oof.studio/",
     "repository": "https://github.com/oof-bar/craft-heroku",
     "success_url": "/admin/install",
-    "scripts": {
-        "postdeploy": "bundle exec rake bootstrap"
-    },
+    "scripts": {},
     "env": {
         "ENVIRONMENT": {
             "description": "The Craft environment for this app.",
