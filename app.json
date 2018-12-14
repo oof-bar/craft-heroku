@@ -32,10 +32,11 @@
     "formation": {
         "web": {
             "quantity": 2,
-            "size": "hobby"
+            "size": "standard-1x"
         },
         "worker": {
-            "quantity": 1
+            "quantity": 1,
+            "size": "hobby"
         }
     },
     "addons": [
