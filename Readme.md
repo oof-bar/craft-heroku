@@ -10,13 +10,15 @@ There are a couple of limitations, here, that are important to note if it’s yo
 2. **Assume the app will scale.** Design your formation and configuration assuming that you’ll (eventually) be running more than a single process. Your database, sessions, and shared caches should all be kept in a common location—but Heroku will help with this through “Addons,” configured with this `app.json`.
 3. **Logs are streams.** Any logging that ends up in a file is as good as gone. There might be some clever workarounds here, but since the purpose of this repo is to demonstrate compatability with first-party Heroku tools, Craft is configured to log to `php://stdout` and `php://stderr`, so the logs can be “[Drained](https://devcenter.heroku.com/articles/log-drains)” anywhere you like.
 
-It’s also worth mentioning: The traditional “queue” is handled here by a `worker` Dyno. In order to run the app locally, you’re apt to need to spin up a listener to ensure your jobs are taken care of:
+Read more about [12-factor](https://12factor.net) app architecture—the underlying principles of the Heroku platform.
+
+It’s also worth mentioning: The traditional “queue” is handled here by a `worker` Dyno. In order to run the app locally, you’ll need to spin up a queue daemon to ensure your jobs are taken care of:
 
 ```
 $ ./craft queue/listen --verbose
 ```
 
-:point_up: This is the same worker command you see in the `Procfile` in the project's root!
+:point_up: This is the same worker command you see in the `Procfile` in the project's root! It’ll get booted alongside your `web` Dyno.
 
 ## Setup
 
