@@ -1,5 +1,5 @@
 {
-  "name": "Craft 3 Heroku Starterkit",
+  "name": "oof-bar/craft-heroku",
   "description": "A simple Craft install, ready for continuous deployment to Heroku.",
   "require": {
     "craftcms/cms": "^3.0.0",
