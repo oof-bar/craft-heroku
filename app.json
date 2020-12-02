@@ -25,6 +25,10 @@
         "CRAFT_STORAGE_PATH": {
             "description": "Where we should store Craft runtime artifacts. Must be writable by the Heroku web process, and assumed ephemeral. This is not a place to permanently store uploaded files.",
             "value": "/tmp"
+        },
+        "MAILER_FROM_ADDRESS": {
+            "description": "The email address your application will use as the default sender.",
+            "required": true
         }
     },
     "formation": {
