@@ -29,13 +29,19 @@ return [
         'runQueueAutomatically' => false,
 
         'siteUrl' => getenv('SITE_URL'),
-        'baseCpUrl' => getenv('CP_URL')
+        'baseCpUrl' => getenv('CP_URL'),
+
+        // Disallow CP configuration, by default:
+        'allowAdminChanges' => false,
     ],
 
     // Dev environment settings
     'dev' => [
         // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => true
+        'devMode' => true,
+
+        // Re-enable CP configuration:
+        'allowAdminChanges' => true,
     ],
 
     // Staging environment settings
