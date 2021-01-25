@@ -1,6 +1,6 @@
-if ./craft install/check
+if php app/craft install/check
 then
-    ./craft migrate/all
-    ./craft project-config/apply
-    ./craft cache/flush-schema db
+    php app/craft migrate/all --interactive=0
+    php app/craft project-config/apply --interactive=0
+    php app/craft cache/flush-schema db --interactive=0
 fi
