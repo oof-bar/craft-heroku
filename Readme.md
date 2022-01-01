@@ -37,4 +37,10 @@ This script does a few things:
 
 > You might encounter some visual issues with the installation process—this is because the `cpresources` that this process moves into the public web root happens on a Dyno-by-Dyno basis, and the initial request for the installation page is not apt to have been hit on both servers—but susequent requests for those assets could still be served by another dyno. Refresh the page a few times, and both dynos will begin to warm their `cpresources`.
 
+## Local Development
+
+But what about the road to production? This repo is designed to work seamlessly with Craft's first-party development environment, [Nitro](https://getnitro.sh).
+
+Install Nitro, clone the project,  and run `$ nitro add craft-heroku`. For more information, please refer to the Nitro [documentation](https://craftcms.com/docs/nitro).
+
 :deciduous_tree:
