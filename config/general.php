@@ -5,48 +5,36 @@
  * All of your system's general configuration settings go in here. You can see a
  * list of the available settings in vendor/craftcms/cms/src/config/GeneralConfig.php.
  *
- * @see craft\config\GeneralConfig
+ * @see \craft\config\GeneralConfig
  */
 
+use craft\helpers\App;
+
+$isDev = App::env('ENVIRONMENT') === 'dev';
+$isProd = App::env('ENVIRONMENT') === 'production';
+
 return [
-    // Global settings
-    '*' => [
-        // Default Week Start Day (0 = Sunday, 1 = Monday...)
-        'defaultWeekStartDay' => 0,
+    // Default Week Start Day (0 = Sunday, 1 = Monday...)
+    'defaultWeekStartDay' => 1,
 
-        // Enable CSRF Protection (recommended)
-        'enableCsrfProtection' => true,
+    // Whether generated URLs should omit "index.php"
+    'omitScriptNameInUrls' => true,
 
-        // Whether generated URLs should omit "index.php"
-        'omitScriptNameInUrls' => true,
+    // The URI segment that tells Craft to load the control panel
+    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 
-        // Control Panel trigger word
-        'cpTrigger' => 'admin',
+    // The secure key Craft will use for hashing and encrypting data
+    'securityKey' => App::env('SECURITY_KEY'),
 
-        // The secure key Craft will use for hashing and encrypting data
-        'securityKey' => getenv('SECURITY_KEY'),
+    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
+    'devMode' => $isDev,
 
-        'runQueueAutomatically' => false,
+    // Whether administrative changes should be allowed
+    'allowAdminChanges' => $isDev,
 
-        'siteUrl' => getenv('SITE_URL'),
-        'baseCpUrl' => getenv('CP_URL'),
+    // Whether crawlers should be allowed to index pages and following links
+    'disallowRobots' => !$isProd,
 
-        // Disallow CP configuration, by default:
-        'allowAdminChanges' => false,
-    ],
-
-    // Dev environment settings
-    'dev' => [
-        // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => true,
-
-        // Re-enable CP configuration:
-        'allowAdminChanges' => true,
-    ],
-
-    // Staging environment settings
-    'staging' => [],
-
-    // Production environment settings
-    'production' => [],
+    // Disable the Queue over HTTP, in favor of a dedicated process
+    'runQueueAutomatically' => false,
 ];

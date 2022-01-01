@@ -17,11 +17,10 @@ return [
         'database' => getenv('DB_DATABASE'),
         'schema' => getenv('DB_SCHEMA'),
         'tablePrefix' => getenv('DB_TABLE_PREFIX'),
-        'port' => getenv('DB_PORT')
+        'port' => getenv('DB_PORT'),
     ],
     'production' => [
+        // Heroku provides a "connection string" that contains everything we need:
         'url' => getenv('DATABASE_URL'),
-        'schema' => 'public',
-        'tablePrefix' => ''
-    ]
+    ],
 ];

@@ -3,12 +3,11 @@
   "description": "A simple Craft install, ready for continuous deployment to Heroku.",
   "require": {
     "craftcms/cms": "^3.0.0",
-    "vlucas/phpdotenv": "^2.4.0",
+    "vlucas/phpdotenv": "^5.4.0",
     "ext-mbstring": "*",
     "ext-imagick": "*",
     "ext-intl": "*",
-    "yiisoft/yii2-redis": "^2.0",
-    "codemix/yii2-streamlog": "^1.2"
+    "yiisoft/yii2-redis": "^2.0"
   },
   "autoload": {
     "psr-4": {

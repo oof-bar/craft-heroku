@@ -17,43 +17,35 @@
  * your config/ folder, alongside this one.
  */
 
+use craft\helpers\App;
+
 return [
     '*' => [
         'modules' => [
-            'my-module' => \modules\Module::class
+            'my-module' => \modules\Module::class,
         ],
         'bootstrap' => [
-            'my-module'
-        ]
+            'my-module',
+        ],
     ],
     'production' => [
         'components' => [
             'redis' => [
                 'class' => yii\redis\Connection::class,
-                'hostname' => parse_url(getenv('REDIS_URL'), PHP_URL_HOST),
-                'port' => parse_url(getenv('REDIS_URL'), PHP_URL_PORT),
-                'password' => parse_url(getenv('REDIS_URL'), PHP_URL_PASS)
+                'hostname' => parse_url(App::env('REDIS_URL'), PHP_URL_HOST),
+                'port' => parse_url(App::env('REDIS_URL'), PHP_URL_PORT),
+                'password' => parse_url(App::env('REDIS_URL'), PHP_URL_PASS),
             ],
             'session' => [
                 'class' => yii\redis\Session::class,
                 'as session' => [
-                    'class' => \craft\behaviors\SessionBehavior::class
-                ]
+                    'class' => \craft\behaviors\SessionBehavior::class,
+                ],
             ],
             'cache' => [
                 'class' => yii\redis\Cache::class,
                 'defaultDuration' => 86400
             ],
-            'log' => [
-                'targets' => [
-                    [
-                        'class' => codemix\streamlog\Target::class,
-                        'url' => 'php://stderr',
-                        'levels' => ['error', 'warning'],
-                        'logVars' => []
-                    ]
-                ]
-            ]
-        ]
-    ]
+        ],
+    ],
 ];

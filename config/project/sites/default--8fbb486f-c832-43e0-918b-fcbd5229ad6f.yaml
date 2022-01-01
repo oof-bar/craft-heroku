@@ -4,5 +4,5 @@ hasUrls: true
 language: en-US
 name: 'Heroku Test'
 primary: true
-siteGroup: e365a34f-acb2-4839-b88c-f247552af90f
+siteGroup: 1bf45ab0-a0a5-4871-a5f1-095e39ba7837 # Heroku Test
 sortOrder: 1

@@ -1,25 +1,22 @@
-dateModified: 1606787321
+dateModified: 1641008275
 email:
   fromEmail: $MAILER_FROM_ADDRESS
-  fromName: 'Craft CMS'
-  replyToEmail: null
-  template: null
-  transportSettings:
-    command: ''
+  fromName: 'Heroku Test'
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
+meta:
+  __names__:
+    1bf45ab0-a0a5-4871-a5f1-095e39ba7837: 'Heroku Test' # Heroku Test
+    4f2397a5-5036-4168-a3a0-8f2306b4cb23: Common # Common
+    8fbb486f-c832-43e0-918b-fcbd5229ad6f: 'Heroku Test' # Heroku Test
 system:
   edition: solo
   live: true
   name: 'Heroku Test'
-  schemaVersion: 3.5.13
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
   defaultGroup: null
-  photoSubpath: ''
+  photoSubpath: null
   photoVolumeUid: null
   requireEmailVerification: true
