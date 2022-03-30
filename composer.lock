@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "035d41223749f9663892f841f696971c",
+    "content-hash": "b9771f2969d5dfc23e0a2f1a6c0b4e5f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -69,49 +69,6 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
-        },
-        {
-            "name": "codemix/yii2-streamlog",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codemix/yii2-streamlog.git",
-                "reference": "1ed104f4bc4e961d1d08fb92d6854f01b1bd0b80"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codemix/yii2-streamlog/zipball/1ed104f4bc4e961d1d08fb92d6854f01b1bd0b80",
-                "reference": "1ed104f4bc4e961d1d08fb92d6854f01b1bd0b80",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "codemix\\streamlog\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Härtl",
-                    "email": "haertl.mike@gmail.com"
-                }
-            ],
-            "description": "A Yii 2 log target for streams in URL format",
-            "keywords": [
-                "log",
-                "stdout",
-                "stream",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/codemix/yii2-streamlog/issues",
-                "source": "https://github.com/codemix/yii2-streamlog/tree/1.3.1"
-            },
-            "time": "2020-03-26T13:23:28+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1581,16 +1538,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -1614,7 +1571,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1676,7 +1633,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -1692,7 +1649,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6154,5 +6111,5 @@
         "ext-intl": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
