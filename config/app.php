@@ -22,7 +22,7 @@ use craft\helpers\App;
 return [
     '*' => [
         'modules' => [
-            'my-module' => \modules\Module::class,
+            'my-module' => modules\Module::class,
         ],
         'bootstrap' => [
             'my-module',
@@ -39,12 +39,15 @@ return [
             'session' => [
                 'class' => yii\redis\Session::class,
                 'as session' => [
-                    'class' => \craft\behaviors\SessionBehavior::class,
+                    'class' => craft\behaviors\SessionBehavior::class,
                 ],
             ],
             'cache' => [
                 'class' => yii\redis\Cache::class,
                 'defaultDuration' => 86400
+            ],
+            'mutex' => [
+                'mutex' => yii\redis\Mutex::class,
             ],
         ],
     ],

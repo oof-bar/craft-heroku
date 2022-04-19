@@ -2,28 +2,17 @@
 namespace modules;
 
 use Craft;
+use yii\base\Module as BaseModule;
 
 /**
- * Custom module class.
- *
- * This class will be available throughout the system via:
- * `Craft::$app->getModule('my-module')`.
- *
- * You can change its module ID ("my-module") to something else from
- * config/app.php.
- *
- * If you want the module to get loaded on every request, uncomment this line
- * in config/app.php:
- *
- *     'bootstrap' => ['my-module']
- *
- * Learn more about Yii module development in Yii's documentation:
- * http://www.yiiframework.com/doc-2.0/guide-structure-modules.html
+ * Custom Module Class
+ * 
+ * Heroku has no special requirements for custom modules. Do be conscious of the stack's tendency to upgrade your PHP version when deploying—if you have really specific constraints on where your code will work, be sure and declare it in composer.json!
  */
-class Module extends \yii\base\Module
+class Module extends BaseModule
 {
     /**
-     * Initializes the module.
+     * @inheritdoc
      */
     public function init()
     {

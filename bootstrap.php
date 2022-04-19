@@ -3,6 +3,8 @@
  * Shared bootstrap file
  */
 
+use craft\helpers\App;
+
 // Define path constants
 define('CRAFT_BASE_PATH', __DIR__);
 define('CRAFT_VENDOR_PATH', CRAFT_BASE_PATH . '/vendor');
@@ -17,7 +19,7 @@ if (class_exists('Dotenv\Dotenv')) {
 
 // Define additional PHP constants
 // (see https://craftcms.com/docs/3.x/config/#php-constants)
-define('CRAFT_ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
-define('CRAFT_LICENSE_KEY', getenv('CRAFT_LICENSE_KEY'));
-define('CRAFT_STORAGE_PATH', getenv('CRAFT_STORAGE_PATH') ?: '../storage');
+define('CRAFT_ENVIRONMENT', App::env('ENVIRONMENT') ?: 'production');
+define('CRAFT_LICENSE_KEY', App::env('CRAFT_LICENSE_KEY'));
+define('CRAFT_STORAGE_PATH', App::env('CRAFT_STORAGE_PATH') ?: '../storage');
 define('CRAFT_STREAM_LOG', true);
