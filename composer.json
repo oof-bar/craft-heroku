@@ -2,12 +2,15 @@
   "name": "oof-bar/craft-heroku",
   "description": "A simple Craft install, ready for continuous deployment to Heroku.",
   "require": {
-    "craftcms/cms": "^3.0.0",
+    "craftcms/cms": "^4.0.0",
     "vlucas/phpdotenv": "^5.4.0",
     "ext-mbstring": "*",
     "ext-imagick": "*",
     "ext-intl": "*",
     "yiisoft/yii2-redis": "^2.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
     "psr-4": {
@@ -21,5 +24,8 @@
       "craftcms/plugin-installer": true,
       "yiisoft/yii2-composer": true
     }
+  },
+  "scripts": {
+    "hang": "@php -r 'sleep(30);'"
   }
 }

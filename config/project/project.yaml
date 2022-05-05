@@ -1,4 +1,4 @@
-dateModified: 1650331701
+dateModified: 1651781655
 email:
   fromEmail: $MAILER_FROM_ADDRESS
   fromName: 'Heroku Test'
@@ -12,10 +12,11 @@ system:
   edition: solo
   live: true
   name: 'Heroku Test'
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
