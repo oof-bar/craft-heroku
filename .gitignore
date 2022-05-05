@@ -1,16 +1,9 @@
-/.env
-/.idea
+# Dependencies
 /vendor
-.DS_Store
-/config/license.key
-
 /node_modules
-/.vscode
 
-# Runtime
+# Runtime, secrets
+.env
 /storage
-/web/uploads
-
-# Build Artifacts
-/web/assets/css
-/web/assets/js
+/web/cpresources
+/config/license.key
