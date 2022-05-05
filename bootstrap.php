@@ -21,5 +21,5 @@ if (class_exists('Dotenv\Dotenv')) {
 // (see https://craftcms.com/docs/3.x/config/#php-constants)
 define('CRAFT_ENVIRONMENT', App::env('ENVIRONMENT') ?: 'production');
 define('CRAFT_LICENSE_KEY', App::env('CRAFT_LICENSE_KEY'));
-define('CRAFT_STORAGE_PATH', App::env('CRAFT_STORAGE_PATH') ?: '../storage');
+define('CRAFT_STORAGE_PATH', App::env('CRAFT_STORAGE_PATH'));
 define('CRAFT_STREAM_LOG', true);

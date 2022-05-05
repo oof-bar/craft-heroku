@@ -4,6 +4,5 @@
 
 # Runtime, secrets
 .env
-/storage
 /web/cpresources
 /config/license.key
