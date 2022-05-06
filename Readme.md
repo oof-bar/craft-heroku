@@ -1,6 +1,6 @@
-# Craft 3 on Heroku
+# Craft 4 on Heroku
 
-Craft 3 is a PHP application based on Yii2, and is installed via Composer.
+Craft 4 is a PHP application based on Yii2, and is installed via Composer.
 
 This means that it’s well-suited for deployment to cloud-based platforms like Heroku. In this case, we’ve put together a barebones starter-kit for running a Craft application on Heroku.
 
@@ -33,7 +33,7 @@ This script does a few things:
 3. Helps set up required [Config Vars](https://devcenter.heroku.com/articles/config-vars);
 4. Performs an initial build, including the installation of Composer dependencies;
 5. Configures Dyno formation (with two `web` processes and one `worker`);
-6. Redirects you to the Craft 3 installation screen.
+6. Redirects you to the Craft 4 installation screen.
 
 > You might encounter some visual issues with the installation process—this is because the `cpresources` that this process moves into the public web root happens on a Dyno-by-Dyno basis, and the initial request for the installation page is not apt to have been hit on both servers—but susequent requests for those assets could still be served by another dyno. Refresh the page a few times, and both dynos will begin to warm their `cpresources`.
 
