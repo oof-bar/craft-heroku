@@ -14,11 +14,17 @@ Read more about [12-factor](https://12factor.net) app architecture—the underly
 
 It’s also worth mentioning: The traditional “queue” is handled here by a `worker` Dyno. In order to run the app locally, you’ll need to spin up a queue daemon to ensure your jobs are taken care of:
 
-```
-$ ./craft queue/listen --verbose
+```bash
+./craft queue/listen --verbose
 ```
 
 :point_up: This is the same worker command you see in the `Procfile` in the project's root! It’ll get booted alongside your `web` Dyno.
+
+On Nitro, it's even simpler:
+
+```bash
+nitro queue
+```
 
 ## Setup
 
