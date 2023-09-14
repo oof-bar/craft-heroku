@@ -1,6 +1,6 @@
 {
     "name": "Craft 3",
-    "description": "A sample app + starterkit for deploying Craft 3 to Heroku.",
+    "description": "A sample app + starterkit for deploying Craft 4 to Heroku.",
     "keywords": [
         "craftcms",
         "craft",
@@ -11,14 +11,14 @@
     "success_url": "/admin/install",
     "scripts": {},
     "env": {
-        "ENVIRONMENT": {
+        "CRAFT_ENVIRONMENT": {
             "description": "The Craft environment for this app.",
             "value": "production"
         },
         "CRAFT_LICENSE_KEY": {
             "description": "The contents of your Craft license key file. Preserve newlines!"
         },
-        "SECURITY_KEY": {
+        "CRAFT_SECURITY_KEY": {
             "description": "A secret key for verifying the integrity of signed cookies.",
             "generator": "secret"
         },
