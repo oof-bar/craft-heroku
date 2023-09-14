@@ -26,8 +26,16 @@
             "description": "Where we should store Craft runtime artifacts. Must be writable by the Heroku web process, and assumed ephemeral. This is not a place to permanently store uploaded files.",
             "value": "/tmp"
         },
+        "CRAFT_EPHEMERAL": {
+            "description": "This value tells Craft to treat the filesystem as ephemeral. It also redirects logs to stdout/stderr.",
+            "value": "true"
+        },
+        "CRAFT_ALLOW_ADMIN_CHANGES": {
+            "description": "Changes to system configuration should only happen in local development.",
+            "value": "false"
+        },
         "MAILER_FROM_ADDRESS": {
-            "description": "The email address your application will use as the default sender.",
+            "description": "The email address your application will use as the default sender. Craft will not likely be able to send email, out-of-the-box—it is recommended that you ",
             "required": true
         }
     },
