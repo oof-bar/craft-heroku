@@ -1,8 +1,8 @@
-baseUrl: $SITE_URL
+baseUrl: $PRIMARY_SITE_URL
 handle: default
 hasUrls: true
 language: en-US
 name: 'Heroku Test'
 primary: true
-siteGroup: eb5db02d-52e0-4807-9105-7a6c5ec66ccd # Heroku Test
+siteGroup: 32a059ea-5079-4243-a33a-8447400cb73f # Heroku Test
 sortOrder: 1

@@ -1,22 +1,21 @@
-dateModified: 1651781655
+dateModified: 1694727169
 email:
-  fromEmail: $MAILER_FROM_ADDRESS
+  fromEmail: august@pixelandtonic.com
   fromName: 'Heroku Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    5881a7a7-7f97-4a4e-a665-b0a6871fff48: 'Heroku Test' # Heroku Test
-    3542129a-7eb9-4b3e-9022-e532a6b99446: Common # Common
-    eb5db02d-52e0-4807-9105-7a6c5ec66ccd: 'Heroku Test' # Heroku Test
+    8c45410a-88e1-4b96-bb0e-837d239383bb: 'Heroku Test' # Heroku Test
+    32a059ea-5079-4243-a33a-8447400cb73f: 'Heroku Test' # Heroku Test
+    96fa4bba-abef-4463-a873-d9ae1f2899a0: Common # Common
 system:
   edition: solo
   live: true
   name: 'Heroku Test'
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
-  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
