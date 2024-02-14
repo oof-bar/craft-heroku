@@ -8,7 +8,7 @@ This means that it’s well-suited for deployment to cloud-based platforms like 
 
 There are a couple of limitations, here, that are important to note if it’s your first time using Heroku:
 
-1. **The filesystem is ephemeral.** This means that anything you store on your running dynos is considered disposable—so, if you want to persist data (like user uploads), you’ll have to use a cloud-based storage service like Amazon S3 or Google Cloud Storage.
+1. **The filesystem is ephemeral.** This means that anything you store on your running dynos is considered disposable—so, if you want to persist data (like user uploads), you’ll have to use a cloud-based storage service like Amazon S3 or Google Cloud Storage. This also applies to Craft-specific features like [Project Config](https://craftcms.com/docs/4.x/project-config.html), which relies on YAML files written to disk.
 2. **Assume the app will scale.** Design your formation and configuration assuming that you’ll (eventually) be running more than a single process. Your database, sessions, and shared caches should all be kept in a common location—but Heroku will help with this through “Addons,” configured with this `app.json`.
 3. **Logs are streams.** Any logging that ends up in a file is as good as gone. There might be some clever workarounds here, but since the purpose of this repo is to demonstrate compatibility with first-party Heroku tools, Craft is configured to log to `php://stdout` and `php://stderr`, so the logs can be “[Drained](https://devcenter.heroku.com/articles/log-drains)” anywhere you like.
 
